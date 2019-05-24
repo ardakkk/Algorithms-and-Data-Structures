@@ -2,4 +2,4 @@
 
 ## License
 
-[MIT License](./LICENSE) © Ardak Tileu
+[MIT License](./LICENSE.md) © Ardak Tileu
