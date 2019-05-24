@@ -1,7 +1,7 @@
 # Algorithms and Data Structures
 
 ## Sources
--[byte-by-byte.com](https://www.byte-by-byte.com/)
+    - [byte-by-byte.com](https://www.byte-by-byte.com/)
 
 ## License
 
