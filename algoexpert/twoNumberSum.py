@@ -19,7 +19,7 @@
 #             nums[num] = True
 #     return []
 
-# O(n) O(nLog(n))
+# O(nLog()) | O(1) space
 def twoNumberSum(array, targetSum):
     array.sort()
     left = 0
