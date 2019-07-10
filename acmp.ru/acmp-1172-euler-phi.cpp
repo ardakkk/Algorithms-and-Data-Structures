@@ -1,3 +1,4 @@
+// Time: O(sqrt(n))
 #include <iostream>
 
 using namespace std;
