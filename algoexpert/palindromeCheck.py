@@ -19,7 +19,7 @@
 #     j = len(string) - 1 - i
 #     return True if i >= j else string[i] == string[j] and isPlaindrome(string, i + 1)
 
-# Time: O(n) | Space: O(n)
+# Time: O(n) | Space: O(1)
 def isPlaindrome(string):
     leftIdx = 0
     rightIdx = len(string) - 1
