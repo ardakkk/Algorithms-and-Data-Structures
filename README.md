@@ -1,4 +1,4 @@
-# Algorithms and Data Structures
+#  My competetive programming solition
 
 ## Sources
 * [byte-by-byte.com](https://www.byte-by-byte.com/)
