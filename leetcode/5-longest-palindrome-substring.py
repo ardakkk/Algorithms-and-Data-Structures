@@ -4,7 +4,9 @@
 # Output: "bab"
 # Note: "aba" is also a valid answer.
 
-# Time: (n^2) | Space: O(1)
+# Time: O(n^2) | Space: O(1)
+# Time complexity: O(n^2) Since expanding a palindrome around its center could take up to O(n), and we do this for each character.
+
 class Solution:
     def longestPalindrome(self, s):
         res = ""
