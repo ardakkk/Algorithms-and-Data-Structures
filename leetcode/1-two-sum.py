@@ -1,4 +1,5 @@
-# Time: O(n) | Space: O(n)
+# Time: O(n) We traverse the list containing n elements only once. Each look up in the Hash table costs only O(1) time
+# Space: O(n) Number of key value pairs stored in hash table, stores at most n elements
 class Solution:
     def twoSum(self, nums, target):
         nums_visited = {} #{ 2 : 0, 7 : 1}
