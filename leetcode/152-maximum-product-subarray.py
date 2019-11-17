@@ -1,3 +1,4 @@
+# Time: O(n) | Space: O(n) We created two dp arrays, each same length as Input
 class Solution:
     def maxProduct(self, nums):
         max_till_index = [nums[0]]
