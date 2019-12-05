@@ -1,3 +1,6 @@
+# Time: O(1) push and empty O(1), pop and peek amortized O(1).
+# Space: O(n) between two stacks, we hold number of items given.
+
 class MyQueue:
 
     def __init__(self):
