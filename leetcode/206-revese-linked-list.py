@@ -23,3 +23,23 @@ class Solution:
             prev = temp
 
         return prev
+
+
+class Solution2:
+    def reverseList(self, head):
+        prev = None
+        current = head
+
+        while current:
+            # template to store old node pointer
+            temp = current.next
+            # change direction
+            current.next = prev
+
+            # move prev and current up by one node
+            prev = current
+            current = temp
+
+        return prev
+
+
