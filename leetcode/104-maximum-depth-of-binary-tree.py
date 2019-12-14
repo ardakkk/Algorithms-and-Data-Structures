@@ -24,4 +24,30 @@ class Solution:
         dive(root, 1)
         return max_depth
 
+# Time: O(N)
+# Space: O(N)
+class Solution:
+    def maxDepth(self, root):
+        if not root:
+            return 0
+
+        stack = [[root, 1]]
+        max_depth = 0
+
+        while stack:
+            curr = stack.pop()
+            node = curr[0]
+            level = curr[1]
+
+            if node.left:
+                stack.append([node.left, level + 1])
+
+            if node.right:
+                stack.append([node.right, level + 1])
+
+            max_depth = max(max_depth, level)
+
+        return max_depth
+
+
 
