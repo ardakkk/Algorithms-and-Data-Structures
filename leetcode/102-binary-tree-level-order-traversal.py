@@ -5,6 +5,8 @@
 #         self.left = None
 #         self.right = None
 
+# Time: O(N) We traverse thru every Node in the Tree
+# Space: O(1)
 class Solution:
     def levelOrder(self, root: TreeNode) -> List[List[int]]:
         res = []
