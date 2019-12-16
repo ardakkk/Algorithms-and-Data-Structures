@@ -24,3 +24,23 @@ class Solution:
             return True
 
         return helper(root, float("-inf"), float("inf"))
+
+# Time: O(n) We traverse thru every Node in the Tree
+# Space: O(1)
+class Solution:
+    def isValidBST(self, root: TreeNode) -> bool:
+        validity = True
+
+        def helper(node, minimum, maximum):
+            nonlocal validity
+            if not node or not validity:
+                return
+            if (minimum is not None and node.val <= minimum) or (maximum is not None and node.val >= maximum):
+                validity = False
+                return
+            helper(node.left, minimum, node.val)
+            helper(node.right, node.val, maximum)
+
+        helper(root, None, None)
+
+        return validity
