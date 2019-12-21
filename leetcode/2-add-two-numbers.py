@@ -4,6 +4,8 @@ class ListNode:
         self.val = x
         self.next = None
 
+# Time: O(n + m)
+# Space: O(n + m)
 class Solution:
     def addTwoNumbers(self, l1: ListNode, l2: ListNode) -> ListNode:
         return self.addTwoNumbersHelper(l1, l2, 0)
