@@ -8,28 +8,21 @@ class Solution:
     def addTwoNumbers(self, l1: ListNode, l2: ListNode) -> ListNode:
         return self.addTwoNumbersHelper(l1, l2, 0)
     def addTwoNumbersIterative(self, l1, l2):
-        a = l1
-        b = l2
-        c = 0
-        
-        ret = current = None 
-        
-        while a or b:
-            val = a.val + b.val + c
-            c = val // 10
-        if not current:
-            ret = current = Node(val % 10)
-        else:
-            current.next = Node(val % 10)
-            current = current.next
-        if a.next or b.next:
-            if not a.next:
-                a.next = Node(0)
-            if not b.next:
-                b.next = Node(0)
-            a = a.next
-            b = b.next
-        return ret
+        head = node = ListNode(None)
+        carry = 0
+
+        while l1 or l2 or carry:
+            if l1:
+                carry += l1.val
+                l1 = l1.next
+            if l2:
+                carry += l2.val
+                l2 = l2.next
+            node.next = ListNode(carry % 10)
+            node = node.next
+            carry //= 10
+        return head.next
+
     def addTwoNumbersHelper(self, l1, l2, c):
         val = l1.val + l2.val + c
         c = val // 10
