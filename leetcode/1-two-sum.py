@@ -12,3 +12,14 @@ class Solution:
                 return [i, nums_visited[complement]]
             else:
                 nums_visited[num] = i
+
+
+class Solution:
+    def twoSum(self, nums, target):
+        dict = {}
+        
+        for i, num in enumerate(nums):
+            if target - num in dict:
+                return [dict[target - num], i]
+            dict[num] = i
+        return []
