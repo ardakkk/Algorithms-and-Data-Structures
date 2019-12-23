@@ -1,3 +1,5 @@
+# Time: O(log n)
+# Space: O(n) Call stack size
 class Solution:
     def searchRange(self, nums, target):
         first = self.binarySearch(nums, 0, len(nums) - 1, target, True)
