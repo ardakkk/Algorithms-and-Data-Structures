@@ -42,4 +42,15 @@ class Solution2:
 
         return prev
 
+# Time: O(n)
+# Space: O(n) Depends n on callstack size
+class Solution3:
+    def reverseList(self, head):
+        if head is None or head.next is None:
+            return head
+        p = self.reverseList(head.next)
+        head.next.next = head
+        head.next = None
+        return p
+
 
