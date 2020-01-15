@@ -18,3 +18,21 @@ class Solution:
             cumulative_product = cumulative_product * nums[i]
 
         return output
+
+# Time: O(n)
+# Space: O(1)
+class Solution2:
+    def productExceptSelf(self, nums):
+        res = [1] * len(nums)
+
+        for i in range(1, len(nums)):
+            res[i] = res[i - 1] * nums[i - 1]
+
+        right = 1
+
+        for i in range(len(nums) - 2, -1, -1):
+            right *= nums[i + 1]
+            res[i] *= right
+
+        return res
+
