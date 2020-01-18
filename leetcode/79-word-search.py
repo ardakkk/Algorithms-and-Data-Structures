@@ -30,5 +30,27 @@ class Solution:
 
         return found
 
+# Time: O(N * M)
+# Space: O(1)
+class Solution2:
+    def exist(self, board, word):
+        for i in range(len(board)):
+            if self.__wordSearchRight(board, i, word):
+                return True
+        for i in range(len(board[0])):
+            if self.__wordSearchBottom(board, i, word):
+                return True
+        return False
 
+    def __wordSearchRight(self, board, index, word):
+        for i in range(len(board[index])):
+            if word[i] != board[index][i]:
+                return False
+        return True
+
+    def __wordSearchBottom(self, board, index, word):
+        for i in range(len(board[index])):
+            if word[i] != board[i][index]:
+                return False
+        return True
 
