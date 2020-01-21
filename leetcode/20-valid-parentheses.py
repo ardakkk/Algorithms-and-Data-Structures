@@ -20,3 +20,46 @@ class Solution:
                 return False
 
         return len(stack) == 0
+
+# Time: O(n)
+# Space complexity: O(n) in worst case, stack is same length as input string
+class Solution2:
+    def isValid(self, s):
+        stack = []
+
+        for char in s:
+            if char == '(':
+                stack.append('(')
+            if char == ')':
+                if len(stack) == 0:
+                    return False
+                if stack[-1] != '(':
+                    return False
+                else:
+                    stack.pop()
+            if char == '{':
+                stack.append('{')
+            if char == '}':
+                if len(stack) == 0:
+                    return False
+                if stack[-1] != '{':
+                    return False
+                else:
+                    stack.pop()
+            if char == '[':
+                stack.append('[')
+            if char == '[':
+                if len(stack) == 0:
+                    return False
+                if stack[-1] != ']':
+                    return False
+                else:
+                    stack.pop()
+        if len(stack) > 0:
+            return False
+        else:
+            return True
+
+
+
+
