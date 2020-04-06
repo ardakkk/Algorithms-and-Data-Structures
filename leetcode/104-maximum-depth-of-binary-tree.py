@@ -26,7 +26,7 @@ class Solution:
 
 # Time: O(N)
 # Space: O(N)
-class Solution:
+class Solution2:
     def maxDepth(self, root):
         if not root:
             return 0
@@ -47,7 +47,6 @@ class Solution:
 
             max_depth = max(max_depth, level)
 
+
         return max_depth
-
-
 
