@@ -1,3 +1,4 @@
+import collections
 # Given an array of strings, group anagrams together.
 # Example:
 #
@@ -28,3 +29,14 @@ class Solution:
 
 result = Solution.groupAnagrams(["eat", "tea", "tan", "ate", "nat", "bat"])
 print(result)
+
+# Time: O(n logn)
+# Space: O(n)
+class Solution:
+    def groupAnagrams(self, strs):
+        groups = collections.defaultdict(list)
+
+        for s in strs:
+            groups["".join(sorted(s))].append(s)
+
+        return groups.values()
