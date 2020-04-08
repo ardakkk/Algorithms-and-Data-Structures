@@ -1,3 +1,5 @@
+# Time: O(n)
+# Space: O(1)
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
         n = len(prices)
