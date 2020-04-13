@@ -23,3 +23,14 @@ class Solution:
 
         self.helper(node.left)
         self.helper(node.right)
+
+class Solution:
+    def invertTree(self, root: TreeNode) -> TreeNode:
+        if root == None:
+            return
+        else:
+            right = self.invertTree(root.right)
+            left = self.invertTree(root.left)
+            root.right = left
+            root.left = right
+        return root
