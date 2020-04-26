@@ -33,6 +33,8 @@ class Solution:
 
         return ways.pop()
 
+# Time: O(n)
+# Space: O(1)
 class Solution:
     def climbStairs(self, n):
         if n == 1:
