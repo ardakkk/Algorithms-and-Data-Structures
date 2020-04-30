@@ -23,3 +23,20 @@ class Solution:
 solution = Solution()
 print(solution.merge([[1, 3], [2, 6], [8, 10], [15, 18]]))
 
+# Time: O(n logn)
+# Space: O(1) Worst case O(n) if all intervals are not merged
+class Solution2:
+    def merge(self, intervals):
+        def takeFirst(elem):
+            return elem[0]
+        intervals.sort(key=takeFirst)
+
+        res = []
+
+        for interval in intervals:
+            if not res or res[-1] < interval[0]:
+                res.append(interval)
+            else:
+                res[-1][1] = max(res[-1][1], interval[1])
+
+        return res
