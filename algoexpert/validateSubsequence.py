@@ -22,4 +22,4 @@ def validateSubsequence2(array, sequence):
 
     return seqIdx == len(sequence)
 
-print(validateSubsequence([5, 1, 22, 25, 6, -1, 8, 10], [1, 6, -1, 10]))
+print(validateSubsequence2([5, 1, 22, 25, 6, -1, 8, 10], [1, 6, -1, 10]))
