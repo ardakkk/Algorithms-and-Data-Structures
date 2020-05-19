@@ -4,6 +4,8 @@ class BinaryTree:
         self.left = None
         self.right = None
 
+# Time: O(n) traversing all the nodes
+# Space: O(n) recursion callstacks
 def branchSums(root):
     sums = []
     calculateBranchSums(root, 0, sums)
