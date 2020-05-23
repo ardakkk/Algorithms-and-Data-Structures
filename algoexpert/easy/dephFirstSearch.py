@@ -12,6 +12,3 @@ class Node:
         for child in self.children:
             child.depthFirstSearch(array)
         return array
-
-result = Node('F').depthFirstSearch(['A', ['B', ['E'], ['F', ['I'], ['J']]], ['C'], ['D', ['G', ['F']], ['H']]])
-print(result)
