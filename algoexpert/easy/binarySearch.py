@@ -15,7 +15,7 @@ def binarySearchHelper(array, target, left, right):
         return binarySearchHelper(array, target, left, middle - 1)
     else:
         return binarySearchHelper(array, target, middle + 1, right)
-    
+
 # Time: O(log(n)) | Space: O(1)
 def binarySearch2(array, target):
     left = 0
