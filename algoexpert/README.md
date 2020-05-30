@@ -14,7 +14,7 @@
 | BinarySearch | ✔️️ |
 | Find Three Largest Numbers | ✔️️ |
 | Bubble Sort | ✔️️ |
-| Insertion Sort | ✖️ |
+| Insertion Sort | ✔️️ |
 | Selection Sort | ✖️ |
 | Palindrome Check | ✖️ |
 | Caesar Cipher Encryptor | ✖️ |
