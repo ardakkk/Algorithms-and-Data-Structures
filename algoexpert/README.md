@@ -12,3 +12,9 @@
 | Depth-first-Search | ✔️️ |
 | Product Sum | ✔️️ |
 | BinarySearch | ✔️️ |
+| Find Three Largest Numbers | ✔️️ |
+| Bubble Sort | ✔️️ |
+| Insertion Sort | ✖️ |
+| Selection Sort | ✖️ |
+| Palindrome Check | ✖️ |
+| Caesar Cipher Encryptor | ✖️ |
