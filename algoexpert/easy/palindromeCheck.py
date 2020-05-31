@@ -44,4 +44,4 @@ def isPalindrome(string):
 
     return True
 
-print(isPlaindrome('abcdcba'))
+print(isPalindrome('abcdcba'))
