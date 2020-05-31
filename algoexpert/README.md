@@ -16,5 +16,5 @@
 | Bubble Sort | ✔️️ |
 | Insertion Sort | ✔️️ |
 | Selection Sort | ✔️️ |
-| Palindrome Check | ✖️ |
+| Palindrome Check | ✔️️️ |
 | Caesar Cipher Encryptor | ✖️ |

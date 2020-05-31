@@ -4,7 +4,7 @@
 #
 #     for i in reversed(range(len(string))):
 #         reversedString += string[i]
-#         return string == reversedString
+#     return string == reversedString
 
 # Time: O(n) | Space: O(n)
 # def isPlaindrome(string):
@@ -19,8 +19,19 @@
 #     j = len(string) - 1 - i
 #     return True if i >= j else string[i] == string[j] and isPlaindrome(string, i + 1)
 
+# Time: O(n) | Space: O(n)
+# def isPalindrome(string, i = 0):
+#     j = len(string) - 1 - i
+#
+#     if i >= j:
+#         return True
+#     if string[i] != string[j]:
+#         return False
+#
+#     return isPalindrome(string, i + 1)
+
 # Time: O(n) | Space: O(1)
-def isPlaindrome(string):
+def isPalindrome(string):
     leftIdx = 0
     rightIdx = len(string) - 1
 
