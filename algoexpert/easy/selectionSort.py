@@ -14,3 +14,5 @@ def selectionSort(array):
 
 def swap(i, j, array):
     array[i], array[j] = array[j], array[i]
+
+print(selectionSort([8, 5, 2, 9, 5, 6, 3])) # 2, 3, 5, 5, 6, 8, 9

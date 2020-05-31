@@ -15,6 +15,6 @@
 | Find Three Largest Numbers | ✔️️ |
 | Bubble Sort | ✔️️ |
 | Insertion Sort | ✔️️ |
-| Selection Sort | ✖️ |
+| Selection Sort | ✔️️ |
 | Palindrome Check | ✖️ |
 | Caesar Cipher Encryptor | ✖️ |
