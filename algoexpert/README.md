@@ -17,4 +17,4 @@
 | Insertion Sort | ✔️️ |
 | Selection Sort | ✔️️ |
 | Palindrome Check | ✔️️️ |
-| Caesar Cipher Encryptor | ✖️ |
+| Caesar Cipher Encryptor | ✔️ |
