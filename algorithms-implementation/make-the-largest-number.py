@@ -7,6 +7,9 @@ Input: [17, 7, 2, 45, 72]
 Output: 77245217
 """
 from functools import cmp_to_key
+
+# Time: O(nLogn)
+# Space: O(n)
 def largestNum(nums):
     def compare(a, b):
         if str(a) + str(b) < str(b) + str(a):
